@@ -1,0 +1,352 @@
+*, *:after, *:before {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   transition: .3s ease-in-out;
+   /* добавим плавность переходов для всех элементов страницы*/
+}
+ul {
+   background: white;
+   list-style: none;
+}
+a {
+   text-decoration: none;
+   outline: none;
+   color: #000;
+}
+p{
+   font-family: 'Open Sans', arial, sans-serif;
+   font-size: 18px;
+   line-height: 1.4;
+   color: black;
+}
+img {
+   max-width: 100%;
+   object-fit: cover;
+   object-position: center;
+   margin: 4px;
+}
+h1,h2,h3,h4,h5,h6{
+   margin: 20px;
+font-size: 42px;
+font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+line-height: 36px;
+align-items: center;
+text-align: center;
+letter-spacing: 0.2em;
+
+color: #000000;   
+}
+img{
+   margin: 0;
+width: 100%;
+   object-fit: cover;
+   object-position: center;
+       max-width: 600px;
+}
+body{
+   width: 100%;
+       background-color: #d4d4c8;
+   margin: 0;
+   padding: 0;
+   color: #333333;
+   font-size: 24px;
+}
+.buttonup {
+width:88px; 
+height:118px;
+position:fixed;
+bottom:20px;
+right:50px;
+}
+/* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
+header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+/* стилевой класс, который управляет шириной контейнера сетки*/
+.container {
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1366px;
+   padding: 0 15px;
+}
+header {
+   width: 100%;
+   background: #7d7e65;
+   box-shadow: 3px 3px 1px rgba(0, 0, 0, .05);
+   padding: 0;
+   position: relative;
+   border-bottom-color: black;
+}
+/* логотип */
+.logo {
+   flex-direction: column;
+}
+.logo span {
+   margin: 5px 0;
+   text-align: center;
+   text-shadow: 2px 2px 1px rgba(0, 0, 0, .6);
+}
+/* меню */
+#menu li {
+   display: inline-block;
+   margin-right: 30px;
+}
+#menu a {
+   color: #111;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 600;
+   display: block;
+   line-height: 40px;
+}
+#menu a:hover {
+   color: #bcbc73;
+}
+#menu li:last-child {
+   margin-right: 0;
+}
+.nav-toggle {
+   display: none;
+   position: relative;
+   float: right;
+   width: 40px;
+   height: 40px;
+   margin-left: 20px;
+   margin-right: 20px;
+   background: #333333;
+   cursor: pointer;
+}
+.nav-toggle span {
+   display: block;
+   position: absolute;
+   top: 19px;
+   left: 8px;
+   right: 8px;
+   height: 2px;
+   background: white;
+}
+.nav-toggle span:before, .nav-toggle span:after {
+   content: "";
+   position: absolute;
+   display: block;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   background: white;
+}
+.nav-toggle span:before {
+   top: -10px;
+}
+.nav-toggle span:after {
+   bottom: -10px;
+}
+/* класс, который будет добавлен в верхнему меню при нажатии на кнопку и покажет скрытое меню*/
+#menu.active {
+   max-height: 123px;
+}
+video{
+   max-width: 1000px;
+width:100%;
+height: auto;
+margin: 0 auto;
+border: 3px solid rgba(0, 0, 0, 1);
+object-fit: contain;
+}
+
+#gallery{
+       margin: auto;
+   margin-top: 20px;
+   min-width: 230px;
+}
+.ter{
+    width: 310px;
+    height: 232px;
+    padding: 5px 5px 15px;
+    background: #e7e9ea;
+    border: 1px solid #cecece;
+    border-radius: 3px;
+    box-shadow: 0 0 4px #cecece;
+    position: relative;
+    margin: 0 auto;
+
+     display: inline-grid;
+    margin-bottom: 20px;
+}
+#we{
+   padding: 10px;
+
+  font-family: 'Open Sans', arial, sans-serif;
+   font-size: 18px;
+   line-height: 1.5;
+   color: #000; 
+   }
+   #we p{
+      width: 88%;
+border: 2px solid black;
+background: white;
+   }
+   #info{
+     max-width: 600px;
+width:100%;
+margin: 0 auto 
+   }
+#info .container {
+display: flex;
+  gap: 8px 8px;
+flex-wrap: nowrap;
+flex-direction: column;
+}
+
+.in{
+   background-color: #ffffff;
+border: 2px solid black;
+   color: black;
+}
+#info p{
+       margin: auto;
+   width: 87.99999%;
+   margin-top: 0;
+color: #000000;
+}
+
+footer {
+   padding: 0;
+   background: #2d3e50;
+   color: white;
+}
+footer .container{
+   display: flex;
+   align-items: center;
+}
+.social-bar-wrap img{
+margin-top: 10px;
+margin-bottom: 10px;
+   width: 60px;
+   height: 60px;
+   margin-right: 50px;
+   margin-left: 50px;
+}
+.footer-col {
+   width: 33.3333333333%;
+   float: left;
+}
+.footer-col p {
+   color: white;
+}
+.footer-col:last-child {
+   text-align: right;
+}
+.social-bar-wrap {
+   text-align: center;
+   flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: column
+}
+.social-bar-wrap a {
+   cursor: pointer;
+}
+   .upbtn {
+    opacity: 0.8;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: -80px;
+    right: 20px;
+    cursor: pointer;
+    transition: all .7s ease-in-out;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #333333;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDQ0NC44MTkgNDQ0LjgxOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDQ0LjgxOSA0NDQuODE5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTQzMy45NjgsMjc4LjY1N0wyNDguMzg3LDkyLjc5Yy03LjQxOS03LjA0NC0xNi4wOC0xMC41NjYtMjUuOTc3LTEwLjU2NmMtMTAuMDg4LDAtMTguNjUyLDMuNTIxLTI1LjY5NywxMC41NjYgICBMMTAuODQ4LDI3OC42NTdDMy42MTUsMjg1Ljg4NywwLDI5NC41NDksMCwzMDQuNjM3YzAsMTAuMjgsMy42MTksMTguODQzLDEwLjg0OCwyNS42OTNsMjEuNDExLDIxLjQxMyAgIGM2Ljg1NCw3LjIzLDE1LjQyLDEwLjg1MiwyNS42OTcsMTAuODUyYzEwLjI3OCwwLDE4Ljg0Mi0zLjYyMSwyNS42OTctMTAuODUyTDIyMi40MSwyMTMuMjcxTDM2MS4xNjgsMzUxLjc0ICAgYzYuODQ4LDcuMjI4LDE1LjQxMywxMC44NTIsMjUuNywxMC44NTJjMTAuMDgyLDAsMTguNzQ3LTMuNjI0LDI1Ljk3NS0xMC44NTJsMjEuNDA5LTIxLjQxMiAgIGM3LjA0My03LjA0MywxMC41NjctMTUuNjA4LDEwLjU2Ny0yNS42OTNDNDQ0LjgxOSwyOTQuNTQ1LDQ0MS4yMDUsMjg1Ljg4NCw0MzMuOTY4LDI3OC42NTd6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==)
+}
+.upbtn:hover {
+    opacity: 1;
+    background-color: #7d7e65;
+}
+@media (max-width: 768px) {
+   /* показываем кнопку для переключения верхней навигации */
+   .nav-toggle {
+      display: block;
+   }
+   header {
+      padding: 10px 0;
+   }
+   /* скрываем верхнее меню, отменяем обтекание, позиционируем его, сместив на высоту шапки сайта */
+   #menu {
+      max-height: 0;
+      background: white;
+      float: none;
+      overflow: hidden;
+      top: 236px;
+      right: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      z-index: 3;
+   }
+   /* делаем элементы списка блочными, чтобы они располагались друг под другом */
+   #menu li {
+      display: block;
+      text-align: center;
+      border-bottom: 1px solid #EBEBE3;
+      margin-right: 0;
+   }
+   /* отменяем обтекание левой и правой колонок, устанавливаем им ширину 100%*/
+   .posts-list, aside {
+      width: 100%;
+      float: none;
+   }
+   .widget-post-title {
+      font-size: 1.5em;
+   }
+}
+
+@media (max-width: 480px) {
+   /* отменяем обтекание для логотипа и выравниваем по центру*/
+   .logo {
+      float: none;
+      margin: 0 auto 15px;
+      display: table;
+   }
+   .logo span {
+      margin: 0 2px;
+   }
+   /* позиционируем меню на увеличившуюся высоту шапки */
+   #menu {
+      top: 250px;
+   } 
+   /* убираем верхнюю и нижнюю границы и выравниваем кнопку по центру */
+   .post-footer {
+      border-top: none;
+      border-bottom: none;
+      text-align: center;
+   }
+   /* отменяем позиционирование кнопок соцсетей */
+   .post-social {
+      position: static;
+      text-align: center;
+      transform: none;
+      margin-top: 20px;
+   }
+   .widget-post-title {
+      font-size: 1.2em;
+   }
+   /* отменяем обтекание для столбцов подвала страницы */
+
+   .footer-col {
+      float: none;
+      margin-bottom: 20px;
+      width: 100%;
+      text-align: center;
+   }
+   .footer-col:last-child {
+      text-align: center;
+      margin-bottom: 0;
+   }
+}
